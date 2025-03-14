@@ -17,8 +17,8 @@ export default function ShopCard({ shop }: ShopCardProps) {
           fill
           className="object-cover"
           priority={false}
-          onError={(e: any) => {
-            e.target.src = 'https://images.unsplash.com/photo-1590246814979-f05ac21a3805?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+          onError={(event: { currentTarget: HTMLImageElement }) => {
+            event.currentTarget.src = 'https://images.unsplash.com/photo-1590246814979-f05ac21a3805?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
           }}
         />
       </div>
